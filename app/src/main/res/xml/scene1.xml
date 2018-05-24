@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<r>
+
+    <scene>
+        <name>선택지 테스트 1</name>
+        <text>선택지 테스트 1</text>
+    </scene>
+    <scene>
+    <text>AAAAAA..</text>
+    </scene>
+
+    <scene>
+        <text>1스테이지 3번문장</text>
+        <select>"1스테이지 1번문장",50,1,"2스테이지 1번문장",51,1,"1스테이지 3번문장",50,3</select>
+    </scene>
+    <scene>
+        <text>1스테이지 4번문장</text>
+
+    </scene>
+
+    <scene>
+        <text>1스테이지 5번문장</text>
+
+    </scene>
+    <scene>
+        <text>1스테이지 6번문장</text>
+
+    </scene>
+    <scene>
+        <text>1스테이지 7번문장</text>
+
+    </scene>
+
+</r>

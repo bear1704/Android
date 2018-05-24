@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/room3"
+        android:visibility="visible"
+        android:id="@+id/gamescreen"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/writeTextview"
+            android:clickable="true"
+            android:onClick="writeTextClicked"
+            android:textColor="@color/default_color"
+            android:textSize="30dp"
+            android:background="#8C8C8C"
+
+            />
+
+
+        <ImageView
+        android:layout_width="150dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/writeTextview"
+        android:id="@+id/printImageLeft"
+       />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/writeTextview"
+            android:id="@+id/printImageCenter"
+
+             />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/writeTextview"
+            android:id="@+id/printImageRight"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/writeTextview"
+            android:id="@+id/name"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/selectLayout">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"
+            android:onClick="select2Clicked"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select3"
+            android:layout_below="@id/select2"
+            android:textSize="30dp"
+            android:onClick="select3Clicked"/>
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select1"
+            android:layout_above="@id/select2"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"
+            android:onClick="select1Clicked"
+            ></Button>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullLayout"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5D5D5D"
+            android:id="@+id/fullImageView"
+            android:visibility="invisible">
+
+
+        </ImageView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save / Load"
+            android:textSize="30dp"
+            android:id="@+id/menu_saveloadButton"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:onClick="menu_saveLoadButtonClicked"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra"
+            android:textSize="30dp"
+            android:layout_below="@+id/menu_saveloadButton"
+            android:id="@+id/menu_ExtraButton"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textSize="30dp"
+            android:layout_below="@+id/menu_ExtraButton"
+            android:id="@+id/menu_ExitButton"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

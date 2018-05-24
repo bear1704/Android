@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoundBox"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/soundtitle"
+        android:layout_marginBottom="40dp"/>
+
+    <GridLayout
+        android:layout_below="@id/soundtitle"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:id="@+id/soundvalue"
+        android:orientation="horizontal"
+        android:rowCount="10"
+        android:columnCount="2"
+        android:layout_marginLeft="10dp"
+        android:alignmentMode="alignBounds"
+        >
+
+        <Button android:text = "Song 1"
+            android:layout_marginLeft="20dp"
+            android:layout_columnWeight="1"
+           />
+        <Button android:text = "Song 2"
+            android:layout_columnWeight="1"
+            />
+        <Button android:text = "Song 3"
+            android:layout_columnWeight="1"/>
+        <Button android:text = "Song 4"
+            android:layout_columnWeight="1"/>
+        <Button android:text = "Song 5"
+            android:layout_columnWeight="1"/>
+        <Button android:text = "Song 6"
+            android:layout_columnWeight="1"/>
+        <Button android:text = "Song 7"
+            android:layout_columnWeight="1"/>
+        <Button android:text = "Song 8"
+            android:layout_columnWeight="1"/>
+
+
+    </GridLayout>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Sequnce play "
+        android:textSize = "20dp"
+        android:layout_toRightOf="@id/soundvalue"
+        android:layout_centerInParent="true"
+        android:id="@+id/sequenceswitch"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  replay on        "
+        android:textSize = "20dp"
+        android:layout_toRightOf="@id/soundvalue"
+        android:layout_below="@id/sequenceswitch"
+        android:layout_centerInParent="true"
+        android:id="@+id/replayswitch"
+        android:layout_marginTop = "8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Exit"/>
+
+
+</RelativeLayout>
